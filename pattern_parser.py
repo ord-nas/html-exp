@@ -1,6 +1,6 @@
 import ply.yacc as yacc
 
-from regex_lexer import tokens
+from pattern_lexer import tokens
 
 def p_expression_alt(p):
     'expression : alt'
