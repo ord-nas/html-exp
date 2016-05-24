@@ -19,10 +19,11 @@ special_chars = {
     ',' : 'COMMA',
     '-' : 'HYPHEN',
     '|' : 'BAR',
+    '/' : 'FSLASH',
 }
 
 # Escaped chars
-valid_escaped_chars = ['\\'] + list(special_chars.keys())
+valid_escaped_chars = ['\\'] + list(special_chars.keys()) # Do we want to allow escaping FSLASH?
 
 # List of token names
 tokens = ['CHAR', 'DLANGLE', 'DRANGLE'] + list(special_chars.values())
